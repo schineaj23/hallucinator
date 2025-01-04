@@ -3,7 +3,7 @@ Hallucinate your effects
 
 ## Setup
 ```bash
-git clone --rescurse-submodules https://github.com/schineaj23/hallucinator.git
+git clone --recurse-submodules https://github.com/schineaj23/hallucinator.git
 cd binding
 mkdir build
 cd build
