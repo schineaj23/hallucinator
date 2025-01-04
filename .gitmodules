@@ -1,0 +1,6 @@
+[submodule "binding/extern/link"]
+	path = binding/extern/link
+	url = https://github.com/ableton/link.git
+[submodule "binding/extern/pybind11"]
+	path = binding/extern/pybind11
+	url = https://github.com/pybind/pybind11

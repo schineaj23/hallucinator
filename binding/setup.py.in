@@ -1,0 +1,19 @@
+from setuptools import setup, find_packages
+import os
+
+# Get the absolute path of the compiled module
+module_path = os.path.abspath("@CMAKE_BINARY_DIR@/lib/Debug/link_wrapper@PYTHON_MODULE_EXTENSION@")
+
+setup(
+    name="link_wrapper",
+    version="0.1.0",
+    description="Python bindings for Ableton Link",
+    author="Andrew Schineller",
+    author_email="andrewschineller@hotmail.com",
+    packages=find_packages(),
+    data_files=[('', [module_path])],
+    package_data={
+        '': ['*.so', '*.pyd'],  # Include compiled extensions
+    },
+    include_package_data=True,
+)
